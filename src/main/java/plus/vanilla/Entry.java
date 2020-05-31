@@ -15,7 +15,7 @@ public class Entry implements ModInitializer {
 		() -> new ItemStack(Blocks.BEDROCK));
     @Override
     public void onInitialize() {
-        LoadCopper.loadCopper();
+        new LoadCopper().loadCopper();
     }
     
 }
