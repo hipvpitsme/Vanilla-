@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "vvv",
+        "v v"
+    ],
+    "key": {
+        "v": {
+            "item": "vanplus:copper_ingot"
+        }
+    },
+    "result": {
+        "item": "vanplus:copper_helmet",
+        "count": 1
+    }
+}

@@ -12,7 +12,8 @@ public class Entry implements ModInitializer {
     //Custom item group
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 		new Identifier("vanplus", "all"),
-		() -> new ItemStack(Blocks.BEDROCK));
+    () -> new ItemStack(Blocks.BEDROCK));
+    
     @Override
     public void onInitialize() {
         new LoadCopper().loadCopper();

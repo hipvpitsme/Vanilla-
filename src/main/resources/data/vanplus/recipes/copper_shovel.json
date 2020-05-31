@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " v ",
+        " / ",
+        " / "
+    ],
+    "key": {
+        "v": {
+            "item": "vanplus:copper_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "vanplus:copper_shovel",
+        "count": 1
+    }
+}

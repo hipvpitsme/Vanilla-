@@ -10,12 +10,12 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
-import net.minecraft.item.Items;
+import plus.vanilla.copper.LoadCopper;
 
 public enum CustomArmorMaterial implements ArmorMaterial {
 
     COPPER("copper", 5, new int[]{1,3,4,2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
-        return Ingredient.ofItems(Items.IRON_INGOT);
+        return Ingredient.ofItems(LoadCopper.COPPER_INGOT);
     });
 
 

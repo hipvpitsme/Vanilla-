@@ -8,6 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -17,15 +18,20 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import plus.vanilla.CustomArmorMaterial;
+import plus.vanilla.CustomToolMaterial;
 import plus.vanilla.Entry;
+import plus.vanilla.toolbase.AxeBase;
+import plus.vanilla.toolbase.HoeBase;
+import plus.vanilla.toolbase.PickaxeBase;
+import plus.vanilla.toolbase.ShovelBase;
 
 public class LoadCopper {
 
     //Armor
-    public static final Item COPPER_HELMET = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.HEAD, (new Item.Settings().group(Entry.ITEM_GROUP)));
-    public static final Item COPPER_CHESTPLATE = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.CHEST, (new Item.Settings().group(Entry.ITEM_GROUP)));
-    public static final Item COPPER_LEGGINGS = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.LEGS, (new Item.Settings().group(Entry.ITEM_GROUP)));
-    public static final Item COPPER_BOOTS = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.FEET, (new Item.Settings().group(Entry.ITEM_GROUP)));
+    public static final Item COPPER_HELMET = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.HEAD, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item COPPER_CHESTPLATE = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.CHEST, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item COPPER_LEGGINGS = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.LEGS, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item COPPER_BOOTS = new ArmorItem(CustomArmorMaterial.COPPER, EquipmentSlot.FEET, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
 
     //Ingot item
     public static final Item COPPER_INGOT = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
@@ -35,11 +41,11 @@ public class LoadCopper {
     public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4).build());
 
     //Tools and weapons
-    public static final Item COPPER_SWORD = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
-    public static final Item COPPER_PICKAXE = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
-    public static final Item COPPER_AXE = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
-    public static final Item COPPER_SHOVEL = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
-    public static final Item COPPER_HOE = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
+    public static final Item COPPER_SWORD = new SwordItem(CustomToolMaterial.COPPER, 3, -2.4f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item COPPER_PICKAXE = new PickaxeBase(CustomToolMaterial.COPPER, 0, -2.8f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item COPPER_AXE = new AxeBase(CustomToolMaterial.COPPER, 6, -3.3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item COPPER_SHOVEL = new ShovelBase(CustomToolMaterial.COPPER, 2, -3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item COPPER_HOE = new HoeBase(CustomToolMaterial.COPPER, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
 
     public void loadCopper(){
         /*
