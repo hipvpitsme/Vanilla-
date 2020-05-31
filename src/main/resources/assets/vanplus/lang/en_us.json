@@ -1,3 +1,10 @@
 {
-    "block.vanplus.copper_block": "Block of Copper"
+    "block.vanplus.copper_block": "Block of Copper",
+    "block.vanplus.copper_ore": "Copper Ore",
+    "itemGroup.vanplus.all": "All Vanilla+ items",
+    "item.vanplus.copper_ingot": "Copper Ingot",
+    "item.vanplus.copper_helmet": "Copper Helmet",
+    "item.vanplus.copper_chestplate": "Copper Chestplate",
+    "item.vanplus.copper_leggings": "Copper Leggings",
+    "item.vanplus.copper_boots": "Copper Boots"
 }

@@ -6,7 +6,7 @@
         "entries": [
         {
           "type": "minecraft:item",
-          "name": "vanplus:copper_block"
+          "name": "vanplus:copper_ore"
         }
       ]
     }
