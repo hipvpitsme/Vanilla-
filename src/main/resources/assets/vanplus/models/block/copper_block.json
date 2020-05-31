@@ -1,0 +1,6 @@
+{
+    "parent":"block/cube_all",
+    "textures":{
+        "all":"vanplus:block/copper_block"
+    }
+}

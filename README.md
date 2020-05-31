@@ -1,4 +1,5 @@
-# Fabric Example Mod
+# Vanilla+
+A FabricMC mod I made that adds some more stuff I'd enjoy to see in the game.
 
 ## Setup
 

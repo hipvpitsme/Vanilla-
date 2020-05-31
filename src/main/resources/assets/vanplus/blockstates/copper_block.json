@@ -1,0 +1,7 @@
+{
+    "variants":{
+        "":{
+            "model":"vanplus:block/copper_block"
+        }
+    }
+}
