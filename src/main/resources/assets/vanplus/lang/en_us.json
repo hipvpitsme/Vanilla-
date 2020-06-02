@@ -11,5 +11,13 @@
     "item.vanplus.copper_pickaxe": "Copper Pickaxe",
     "item.vanplus.copper_axe": "Copper Axe",
     "item.vanplus.copper_shovel": "Copper Shovel",
-    "item.vanplus.copper_hoe": "Copper Hoe"
+    "item.vanplus.copper_hoe": "Copper Hoe",
+    "block.minecraft.obsidian": "Block of Obsidian",
+    "item.vanplus.obsidian": "Obsidian",
+    "item.vanplus.obsidian_sword": "Obsidian Sword",
+    "item.vanplus.obsidian_pickaxe": "Obsidian Pickaxe",
+    "item.vanplus.obsidian_axe": "Obsidian Axe",
+    "item.vanplus.obsidian_shovel": "Obsidian Shovel",
+    "item.vanplus.obsidian_hoe": "Obsidian Hoe",
+    "item.vanplus.iron_rod": "Iron Rod"
 }

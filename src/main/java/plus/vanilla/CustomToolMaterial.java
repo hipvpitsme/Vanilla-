@@ -5,59 +5,55 @@ import com.google.common.base.Supplier;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 import plus.vanilla.copper.LoadCopper;
+import plus.vanilla.obsidian.LoadObsidian;
 import net.minecraft.item.ToolMaterial;
 
 public enum CustomToolMaterial implements ToolMaterial {
-
-    COPPER(150, 10, 3.0f, 1.0f, 2, () -> {
+    COPPER(2, 150, 3.0f, 1.0f, 10, () -> {
         return Ingredient.ofItems(LoadCopper.COPPER_INGOT);
+    }),
+    OBSIDIAN(4, 2000, 10f, 5f, 14, () -> {
+        return Ingredient.ofItems(LoadObsidian.OBSIDIAN);
     });
 
 
-    private final int durability;
-    private final int enchantability;
+    private final int miningLevel;
+    private final int itemDurability;
     private final float miningSpeed;
     private final float attackDamage;
-    private final int miningLevel;
+    private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
- 
-    CustomToolMaterial(int durability, int enchantability, float miningSpeed, float attackDamage, int miningLevel, Supplier<Ingredient> repairIngredient) {
-        this.durability=durability;
-        this.enchantability=enchantability;
-        this.miningSpeed=miningSpeed;
-        this.attackDamage=attackDamage;
-        this.miningLevel=miningLevel;
+
+    private CustomToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantibility, Supplier<Ingredient> repairIngredient) {
+        this.miningLevel = miningLevel;
+        this.itemDurability = itemDurability;
+        this.miningSpeed = miningSpeed;
+        this.attackDamage = attackDamage;
+        this.enchantability = enchantibility;
         this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
     }
 
-    @Override
     public int getDurability() {
-        return durability;
+        return this.itemDurability;
     }
 
-    @Override
-    public int getEnchantability() {
-        return enchantability;
-    }
-
-    @Override
     public float getMiningSpeed() {
-        return miningSpeed;
+        return this.miningSpeed;
     }
 
-    @Override
     public float getAttackDamage() {
-        return attackDamage;
+        return this.attackDamage;
     }
 
-    @Override
     public int getMiningLevel() {
-        return miningLevel;
+        return this.miningLevel;
     }
 
-    @Override
-    public Ingredient getRepairIngredient(){
-        // We needed to make it a Lazy type so we can actually get the Ingredient from the Supplier.
-        return this.repairIngredient.get();
+    public int getEnchantability() {
+        return this.enchantability;
+    }
+
+    public Ingredient getRepairIngredient() {
+        return (Ingredient)this.repairIngredient.get();
     }
 }
