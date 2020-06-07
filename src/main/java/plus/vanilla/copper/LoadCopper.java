@@ -1,7 +1,7 @@
 package plus.vanilla.copper;
 
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
@@ -37,15 +37,15 @@ public class LoadCopper {
     public static final Item COPPER_INGOT = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
 
     //Blocks
-    public static final Block COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(3).build());
-    public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4).build());
+    public static final Block COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(3));
+    public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4));
 
     //Tools and weapons
     public static final Item COPPER_SWORD = new SwordItem(CustomToolMaterial.COPPER, 3, -2.4f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item COPPER_PICKAXE = new PickaxeBase(CustomToolMaterial.COPPER, 0, -2.8f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item COPPER_AXE = new AxeBase(CustomToolMaterial.COPPER, 6, -3.3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item COPPER_SHOVEL = new ShovelBase(CustomToolMaterial.COPPER, 2, -3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item COPPER_HOE = new HoeBase(CustomToolMaterial.COPPER, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item COPPER_HOE = new HoeBase(CustomToolMaterial.COPPER, -2, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
 
     public void loadCopper(){
         /*

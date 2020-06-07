@@ -14,7 +14,7 @@ import plus.vanilla.copper.LoadCopper;
 
 public enum CustomArmorMaterial implements ArmorMaterial {
 
-    COPPER("copper", 5, new int[]{1,3,4,2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+    COPPER("copper", 5, new int[]{1,3,4,2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(LoadCopper.COPPER_INGOT);
     });
 
@@ -26,16 +26,18 @@ public enum CustomArmorMaterial implements ArmorMaterial {
     private final int enchantability;
     private final SoundEvent equipSound;
     private final float toughness;
+    private final float knockbackResistance;
     private final Lazy<Ingredient> repairIngredient;
- 
-    CustomArmorMaterial(String name, int durabilityMultiplier, int[] armorValueArr, int enchantability, SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairIngredient) {
+
+    private CustomArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> supplier) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
-        this.armorValues = armorValueArr;
+        this.armorValues = protectionAmounts;
         this.enchantability = enchantability;
-        this.equipSound = soundEvent;
+        this.equipSound = equipSound;
         this.toughness = toughness;
-        this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
+        this.knockbackResistance = knockbackResistance;
+        this.repairIngredient = new Lazy<Ingredient>(supplier);
     }
  
     public int getDurability(EquipmentSlot equipmentSlot_1) {
@@ -66,5 +68,9 @@ public enum CustomArmorMaterial implements ArmorMaterial {
  
     public float getToughness() {
         return this.toughness;
+    }
+
+    public float getKnockbackResistance() {
+        return knockbackResistance;
     }
 }

@@ -5,8 +5,8 @@ import net.minecraft.item.ToolMaterial;
 
 public class HoeBase extends HoeItem {
 
-    public HoeBase(ToolMaterial material, float attackSpeed, Settings settings) {
-        super(material, attackSpeed, settings);
+    public HoeBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
     }
     
 }

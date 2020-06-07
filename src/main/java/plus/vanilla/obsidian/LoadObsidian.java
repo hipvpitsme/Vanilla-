@@ -21,7 +21,7 @@ public class LoadObsidian {
     public static final Item OBSIDIAN_PICKAXE = new PickaxeBase(CustomToolMaterial.OBSIDIAN, 1, -2.8F, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item OBSIDIAN_AXE = new AxeBase(CustomToolMaterial.OBSIDIAN, 5.0F, -3.0F, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item OBSIDIAN_SHOVEL = new ShovelBase(CustomToolMaterial.OBSIDIAN, 1.5F, -3.0F, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item OBSIDIAN_HOE = new HoeBase(CustomToolMaterial.OBSIDIAN, 0f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item OBSIDIAN_HOE = new HoeBase(CustomToolMaterial.OBSIDIAN, -3, 0f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
 
     public void loadObsidian(){
         //Obsidian item

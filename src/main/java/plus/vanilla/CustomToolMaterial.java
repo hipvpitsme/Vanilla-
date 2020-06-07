@@ -37,7 +37,7 @@ public enum CustomToolMaterial implements ToolMaterial {
         return this.itemDurability;
     }
 
-    public float getMiningSpeed() {
+    public float getMiningSpeedMultiplier() {
         return this.miningSpeed;
     }
 
