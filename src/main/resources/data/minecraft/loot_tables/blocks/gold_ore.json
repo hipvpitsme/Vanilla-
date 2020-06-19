@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:alternatives",
+                "children": [
+                    {
+                        "type": "minecraft:item",
+                        "conditions": [
+                            {
+                                "condition": "minecraft:match_tool",
+                                "predicate": {
+                                    "enchantments": [
+                                        {
+                                            "enchantment": "vanplus:melting",
+                                            "levels": {
+                                                "min": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "functions": [
+                            {
+                                "function": "minecraft:apply_bonus",
+                                "enchantment": "minecraft:fortune",
+                                "formula": "minecraft:ore_drops"
+                            }
+                        ],
+                        "name": "minecraft:gold_ingot"
+                    },
+                    {
+                        "type": "minecraft:item",
+                        "conditions": [
+                            {
+                                "condition": "minecraft:match_tool",
+                                "predicate": {
+                                    "enchantments": [
+                                        {
+                                            "enchantment": "vanplus:melting",
+                                            "levels": {
+                                                "min": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "name": "minecraft:gold_ingot"
+                    },
+                    {
+                        "type": "minecraft:item",
+                        "name": "minecraft:gold_ore"
+                    }
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:survives_explosion"
+            }
+        ]
+      }
+    ]
+  }
