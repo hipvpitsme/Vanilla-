@@ -41,20 +41,20 @@ public class LoadNetherstar {
         Netherstar
         */
         //Block
-        Registry.register(Registry.BLOCK, new Identifier("vanplus", "nether_star_block"), NETHERSTAR_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_block"), new BlockItem(NETHERSTAR_BLOCK, new Item.Settings().group(Entry.ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier("vanplus", "netherstar_block"), NETHERSTAR_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_block"), new BlockItem(NETHERSTAR_BLOCK, new Item.Settings().group(Entry.ITEM_GROUP)));
 
         //Armor
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_helmet"), NETHERSTAR_HELMET);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_chestplate"), NETHERSTAR_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_leggings"), NETHERSTAR_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_boots"), NETHERSTAR_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_helmet"), NETHERSTAR_HELMET);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_chestplate"), NETHERSTAR_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_leggings"), NETHERSTAR_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_boots"), NETHERSTAR_BOOTS);
 
         //Tools and weapons
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_sword"), NETHERSTAR_SWORD);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_pickaxe"), NETHERSTAR_PICKAXE);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_axe"), NETHERSTAR_AXE);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_shovel"), NETHERSTAR_SHOVEL);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "nether_star_hoe"), NETHERSTAR_HOE);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_sword"), NETHERSTAR_SWORD);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_pickaxe"), NETHERSTAR_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_axe"), NETHERSTAR_AXE);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_shovel"), NETHERSTAR_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_hoe"), NETHERSTAR_HOE);
     }
 }
