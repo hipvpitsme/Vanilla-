@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "vanplus:item/netherstar_pickaxe"
+    }
+  }
