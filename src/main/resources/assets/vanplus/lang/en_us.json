@@ -32,5 +32,7 @@
     "item.vanplus.nether_star_axe": "§eNether Star Axe",
     "item.vanplus.nether_star_shovel": "§eNether Star Shovel",
     "item.vanplus.nether_star_hoe": "§eNether Star Hoe",
-    "enchantment.vanplus.melting": "Melting"
+    "enchantment.vanplus.melting": "Melting",
+    "options.vanplus.title": "Vanilla+ Options",
+    "options.vanplus.showcoords": "Show Coordinates"
 }

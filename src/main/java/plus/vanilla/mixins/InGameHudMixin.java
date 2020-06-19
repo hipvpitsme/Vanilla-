@@ -13,32 +13,34 @@ import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.util.math.MatrixStack;
+import plus.vanilla.settings.VanPlusOptions;
 
 @Mixin(InGameHud.class)
 public class InGameHudMixin extends DrawableHelper {
     @Inject(at = @At("RETURN"), method = "render()V")
     public void render(MatrixStack matrixStack, float f, CallbackInfo info) {
-        MinecraftClient mc = MinecraftClient.getInstance();
-        if(MinecraftClient.isHudEnabled()){
-            InGameHud hud = mc.inGameHud;
-            if(hud != null){
-                TextRenderer textRenderer = hud.getFontRenderer();
-                ClientPlayerEntity player = mc.player;
-
-                double px = player.getX();
-                double py = player.getY();
-                double pz = player.getZ();
-
-                String decimalPattern = "0.###";
-                DecimalFormat df = new DecimalFormat(decimalPattern);
-
-                //int width = mc.getWindow().getScaledWidth();
-                int height = mc.getWindow().getScaledHeight();
-                int fontHeight = textRenderer.fontHeight;
-                textRenderer.draw(matrixStack, "Position", 0, height-(fontHeight*4), 0xFFFFFFFF);
-                textRenderer.draw(matrixStack, "X: "+df.format(px), 0, height-(fontHeight*3), 0xFFFFFFFF);
-                textRenderer.draw(matrixStack, "Y: "+df.format(py), 0, height-(fontHeight*2), 0xFFFFFFFF);
-                textRenderer.draw(matrixStack, "Z: "+df.format(pz), 0, height-(fontHeight*1), 0xFFFFFFFF);
+        if(VanPlusOptions.showCoords){
+            MinecraftClient mc = MinecraftClient.getInstance();
+            if(MinecraftClient.isHudEnabled()){
+                InGameHud hud = mc.inGameHud;
+                if(hud != null){
+                    TextRenderer textRenderer = hud.getFontRenderer();
+                    ClientPlayerEntity player = mc.player;
+    
+                    double px = player.getX();
+                    double py = player.getY();
+                    double pz = player.getZ();
+    
+                    String decimalPattern = "0.###";
+                    DecimalFormat df = new DecimalFormat(decimalPattern);
+    
+                    //int width = mc.getWindow().getScaledWidth();
+                    int height = mc.getWindow().getScaledHeight();
+                    int fontHeight = textRenderer.fontHeight;
+                    textRenderer.draw(matrixStack, "X: "+df.format(px), 0, height-(fontHeight*3), 0xFFFFFFFF);
+                    textRenderer.draw(matrixStack, "Y: "+df.format(py), 0, height-(fontHeight*2), 0xFFFFFFFF);
+                    textRenderer.draw(matrixStack, "Z: "+df.format(pz), 0, height-(fontHeight*1), 0xFFFFFFFF);
+                }
             }
         }
     }

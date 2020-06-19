@@ -21,7 +21,7 @@ public class OptionsScreenMixin extends Screen {
 
     @Inject(at = @At("RETURN"), method = "init()V")
     protected void init(CallbackInfo info) {
-        addButton(new ButtonWidget(this.width / 2 + 5, this.height / 6 + 120 - 6 + 20 + 4, 150, 20, new TranslatableText("menu.vanplus.options"), (buttonWidget)->{
+        addButton(new ButtonWidget(this.width / 2 + 5, this.height / 6 + 120 - 6 + 20 + 4, 150, 20, new TranslatableText("options.vanplus.title"), (buttonWidget)->{
             MinecraftClient.getInstance().openScreen(new VanPlusOptions(this));
         }));
     }

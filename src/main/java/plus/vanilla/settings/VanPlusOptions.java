@@ -2,15 +2,18 @@ package plus.vanilla.settings;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.ScreenTexts;
+import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.TranslatableText;
 
 public class VanPlusOptions extends Screen {
 
     private final Screen parent;
+    public static Boolean showCoords = true;
 
     public VanPlusOptions(Screen parentScreen) {
-        super(new TranslatableText("menu.vanplus.options"));
+        super(new TranslatableText("options.vanplus.title"));
         this.parent = parentScreen;
     }
     
@@ -20,6 +23,26 @@ public class VanPlusOptions extends Screen {
         this.width = width;
         this.height = height;
         this.textRenderer = client.textRenderer;
+
+        String yesNo = "";
+        if(showCoords){
+            yesNo = "Yes";
+        }else{
+            yesNo = "No";
+        }
+        addButton(new ButtonWidget(this.width / 2 - 100, this.height / 6, 200, 20,new TranslatableText("options.vanplus.showcoords").append(": ").append(yesNo),(buttonWidget)->{
+            showCoords = !showCoords;
+            String ynCb;
+            if(showCoords){
+                ynCb = "Yes";
+            }else{
+                ynCb = "No";
+            }
+            buttonWidget.setMessage(new TranslatableText("options.vanplus.showcoords").append(": ").append(ynCb));
+        }));
+        addButton(new ButtonWidget(this.width / 2 - 100, this.height / 6 + 144, 200, 20, ScreenTexts.DONE, (buttonWidget) -> {
+            this.client.openScreen(this.parent);
+        }));
     }
 
     @Override
