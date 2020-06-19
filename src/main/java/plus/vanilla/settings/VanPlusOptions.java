@@ -19,10 +19,7 @@ public class VanPlusOptions extends Screen {
     
     @Override
     public void init(MinecraftClient client, int width, int height){
-        this.client = client;
-        this.width = width;
-        this.height = height;
-        this.textRenderer = client.textRenderer;
+        super.init(client, width, height);
 
         String yesNo = "";
         if(showCoords){
