@@ -7,7 +7,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import plus.vanilla.copper.LoadCopper;
+import plus.vanilla.enchants.LoadEnchants;
 import plus.vanilla.iron.LoadIron;
+import plus.vanilla.netherstar.LoadNetherstar;
 import plus.vanilla.obsidian.LoadObsidian;
 
 public class Entry implements ModInitializer {
@@ -21,6 +23,8 @@ public class Entry implements ModInitializer {
         new LoadCopper().loadCopper();
         new LoadObsidian().loadObsidian();
         new LoadIron().loadIron();
+        new LoadNetherstar().loadNetherstar();
+        new LoadEnchants().loadEnchants();
     }
     
 }

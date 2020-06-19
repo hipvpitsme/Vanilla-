@@ -11,15 +11,19 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import plus.vanilla.copper.LoadCopper;
+import net.minecraft.item.Items;
 
 public enum CustomArmorMaterial implements ArmorMaterial {
 
     COPPER("copper", 5, new int[]{1,3,4,2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(LoadCopper.COPPER_INGOT);
+    }),
+    NETHERSTAR("netherstar", 42, new int[]{5, 8, 10, 5}, 18, SoundEvents.ENTITY_WITHER_SKELETON_STEP, 4.0F, 0.2F, () -> {
+        return Ingredient.ofItems(Items.NETHER_STAR);
     });
 
 
-    private static final int[] baseDurability = {13, 15, 16, 11};
+    private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] armorValues;
@@ -41,7 +45,7 @@ public enum CustomArmorMaterial implements ArmorMaterial {
     }
  
     public int getDurability(EquipmentSlot equipmentSlot_1) {
-        return baseDurability[equipmentSlot_1.getEntitySlotId()] * this.durabilityMultiplier;
+        return BASE_DURABILITY[equipmentSlot_1.getEntitySlotId()] * this.durabilityMultiplier;
     }
  
     public int getProtectionAmount(EquipmentSlot equipmentSlot_1) {

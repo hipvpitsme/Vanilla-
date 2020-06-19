@@ -6,6 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 import plus.vanilla.copper.LoadCopper;
 import plus.vanilla.obsidian.LoadObsidian;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 
 public enum CustomToolMaterial implements ToolMaterial {
@@ -14,6 +15,9 @@ public enum CustomToolMaterial implements ToolMaterial {
     }),
     OBSIDIAN(4, 2000, 10f, 5f, 14, () -> {
         return Ingredient.ofItems(LoadObsidian.OBSIDIAN);
+    }),
+    NETHERSTAR(5, 3000, 15f, 7f, 18, () -> {
+        return Ingredient.ofItems(Items.NETHER_STAR);
     });
 
 

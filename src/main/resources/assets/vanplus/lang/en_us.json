@@ -19,5 +19,17 @@
     "item.vanplus.obsidian_axe": "Obsidian Axe",
     "item.vanplus.obsidian_shovel": "Obsidian Shovel",
     "item.vanplus.obsidian_hoe": "Obsidian Hoe",
-    "item.vanplus.iron_rod": "Iron Rod"
+    "item.vanplus.iron_rod": "Iron Rod",
+    "menu.coralserver": "Coral Server",
+    "block.vanplus.nether_star_block": "§eNether Star Block",
+    "item.vanplus.nether_star_helmet": "§eNether Star Helmet",
+    "item.vanplus.nether_star_chestplate": "§eNether Star Chestplate",
+    "item.vanplus.nether_star_leggings": "§eNether Star Leggings",
+    "item.vanplus.nether_star_boots": "§eNether Star Boots",
+    "item.vanplus.nether_star_sword": "§eNether Star Sword",
+    "item.vanplus.nether_star_pickaxe": "§eNether Star Pickaxe",
+    "item.vanplus.nether_star_axe": "§eNether Star Axe",
+    "item.vanplus.nether_star_shovel": "§eNether Star Shovel",
+    "item.vanplus.nether_star_hoe": "§eNether Star Hoe",
+    "enchantment.vanplus.melting": "Melting"
 }
