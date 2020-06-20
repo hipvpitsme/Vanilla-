@@ -10,17 +10,14 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+//Go to https://modmuss50.me/fabric.html for updates
 dependencies {
-	//to change the versions see the gradle.properties file
-	minecraft "com.mojang:minecraft:1.16-pre2"
-    mappings "net.fabricmc:yarn:1.16-pre2+build.2:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.8.7+build.201"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:0.11.7+build.356-1.16"
-
-	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
+    minecraft "com.mojang:minecraft:1.16-rc1"
+    mappings "net.fabricmc:yarn:1.16-rc1+build.5:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.8.8+build.202"
+            
+    //Fabric api
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.12.5+build.367-1.16"
 }
 
 processResources {

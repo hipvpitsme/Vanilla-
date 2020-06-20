@@ -1,0 +1,30 @@
+{
+    "parent": "vanplus:plus/root",
+    "display": {
+      "icon": {
+        "item": "vanplus:copper_ingot"
+      },
+      "title": {
+        "translate": "advancements.plus.smelt_copper.title"
+      },
+      "description": {
+        "translate": "advancements.plus.smelt_copper.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "iron": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "vanplus:copper_ingot"
+            }
+          ]
+        }
+      }
+    }
+  }

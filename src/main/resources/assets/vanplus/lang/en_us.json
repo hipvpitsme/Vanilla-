@@ -22,7 +22,7 @@
     "item.vanplus.iron_rod": "Iron Rod",
     "menu.coralserver": "Coral Server",
     "menu.coraldiscord": "Coral Discord",
-    "block.vanplus.netherstar_block": "§eNether Star Block",
+    "block.vanplus.netherstar_block": "§eBlock of Nether Stars",
     "item.vanplus.netherstar_helmet": "§eNether Star Helmet",
     "item.vanplus.netherstar_chestplate": "§eNether Star Chestplate",
     "item.vanplus.netherstar_leggings": "§eNether Star Leggings",
@@ -34,5 +34,9 @@
     "item.vanplus.netherstar_hoe": "§eNether Star Hoe",
     "enchantment.vanplus.melting": "Melting",
     "options.vanplus.title": "Vanilla+ Options",
-    "options.vanplus.showcoords": "Show Coordinates"
+    "options.vanplus.showcoords": "Show Coordinates",
+    "advancements.plus.root.title": "Vanilla+",
+    "advancements.plus.root.description": "Wait... there's more?",
+    "advancements.plus.smelt_copper.title": "Acquire \"Hardware\"",
+    "advancements.plus.smelt_copper.description": "Smelt a copper ingot"
 }

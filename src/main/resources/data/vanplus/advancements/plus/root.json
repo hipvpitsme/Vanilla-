@@ -1,0 +1,30 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bedrock"
+      },
+      "title": {
+        "translate": "advancements.plus.root.title"
+      },
+      "description": {
+        "translate": "advancements.plus.root.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/block/bedrock.png"
+    },
+    "criteria": {
+      "crafting_table": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "vanplus:copper_ore"
+            }
+          ]
+        }
+      }
+    }
+  }
