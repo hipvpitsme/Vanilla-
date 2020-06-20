@@ -26,5 +26,4 @@ public class Entry implements ModInitializer {
         new LoadNetherstar().loadNetherstar();
         new LoadEnchants().loadEnchants();
     }
-    
 }

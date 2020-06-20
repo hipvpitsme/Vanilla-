@@ -31,10 +31,10 @@ public class LoadNetherstar {
 
     //Tools and weapons
     public static final Item NETHERSTAR_SWORD = new SwordItem(CustomToolMaterial.NETHERSTAR, 3, -2.4f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_PICKAXE = new PickaxeBase(CustomToolMaterial.NETHERSTAR, -2, -2.8f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_PICKAXE = new PickaxeBase(CustomToolMaterial.NETHERSTAR, -3, -2.8f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
     public static final Item NETHERSTAR_AXE = new AxeBase(CustomToolMaterial.NETHERSTAR, 6, -3.3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_SHOVEL = new ShovelBase(CustomToolMaterial.NETHERSTAR, -2, -3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_HOE = new HoeBase(CustomToolMaterial.NETHERSTAR, -2, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_SHOVEL = new ShovelBase(CustomToolMaterial.NETHERSTAR, -3, -3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_HOE = new HoeBase(CustomToolMaterial.NETHERSTAR, -9, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
 
     public void loadNetherstar(){
         /*
