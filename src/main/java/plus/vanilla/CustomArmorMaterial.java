@@ -10,7 +10,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
-import plus.vanilla.copper.LoadCopper;
+import plus.vanilla.addition.copper.LoadCopper;
 import net.minecraft.item.Items;
 
 public enum CustomArmorMaterial implements ArmorMaterial {

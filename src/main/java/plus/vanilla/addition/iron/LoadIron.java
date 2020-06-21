@@ -1,4 +1,4 @@
-package plus.vanilla.iron;
+package plus.vanilla.addition.iron;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;

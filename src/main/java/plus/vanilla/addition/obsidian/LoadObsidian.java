@@ -1,4 +1,4 @@
-package plus.vanilla.obsidian;
+package plus.vanilla.addition.obsidian;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;

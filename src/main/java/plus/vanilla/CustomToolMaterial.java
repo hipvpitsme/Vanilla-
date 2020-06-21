@@ -4,8 +4,8 @@ import com.google.common.base.Supplier;
 
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
-import plus.vanilla.copper.LoadCopper;
-import plus.vanilla.obsidian.LoadObsidian;
+import plus.vanilla.addition.copper.LoadCopper;
+import plus.vanilla.addition.obsidian.LoadObsidian;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 

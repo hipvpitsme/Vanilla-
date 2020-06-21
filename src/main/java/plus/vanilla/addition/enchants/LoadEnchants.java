@@ -1,4 +1,4 @@
-package plus.vanilla.enchants;
+package plus.vanilla.addition.enchants;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EquipmentSlot;

@@ -6,11 +6,11 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import plus.vanilla.copper.LoadCopper;
-import plus.vanilla.enchants.LoadEnchants;
-import plus.vanilla.iron.LoadIron;
-import plus.vanilla.netherstar.LoadNetherstar;
-import plus.vanilla.obsidian.LoadObsidian;
+import plus.vanilla.addition.copper.LoadCopper;
+import plus.vanilla.addition.enchants.LoadEnchants;
+import plus.vanilla.addition.iron.LoadIron;
+import plus.vanilla.addition.netherstar.LoadNetherstar;
+import plus.vanilla.addition.obsidian.LoadObsidian;
 
 public class Entry implements ModInitializer {
     //Custom item group

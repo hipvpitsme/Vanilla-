@@ -1,4 +1,4 @@
-package plus.vanilla.netherstar;
+package plus.vanilla.addition.netherstar;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;

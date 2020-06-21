@@ -1,4 +1,4 @@
-package plus.vanilla.copper;
+package plus.vanilla.addition.copper;
 
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
