@@ -37,8 +37,8 @@ public class LoadCopper {
     public static final Item COPPER_INGOT = new Item(new Item.Settings().group(Entry.ITEM_GROUP));
 
     //Blocks
-    public static final Block COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(3));
-    public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4));
+    public static final Block COPPER_ORE = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().hardness(3));
+    public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).requiresTool().hardness(4));
 
     //Tools and weapons
     public static final Item COPPER_SWORD = new SwordItem(CustomToolMaterial.COPPER, 3, -2.4f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
