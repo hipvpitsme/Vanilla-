@@ -11,7 +11,7 @@ import net.minecraft.client.gui.screen.options.OptionsScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
-import plus.vanilla.settings.VanPlusOptions;
+import plus.vanilla.addition.settings.VanPlusOptions;
 
 @Mixin(OptionsScreen.class)
 public class OptionsScreenMixin extends Screen {

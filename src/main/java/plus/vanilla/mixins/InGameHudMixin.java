@@ -13,7 +13,7 @@ import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.util.math.MatrixStack;
-import plus.vanilla.settings.VanPlusOptions;
+import plus.vanilla.addition.settings.VanPlusOptions;
 
 @Mixin(InGameHud.class)
 public class InGameHudMixin extends DrawableHelper {

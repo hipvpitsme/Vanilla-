@@ -1,4 +1,4 @@
-package plus.vanilla.settings;
+package plus.vanilla.addition.settings;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
