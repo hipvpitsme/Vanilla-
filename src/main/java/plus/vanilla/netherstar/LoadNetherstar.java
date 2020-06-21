@@ -21,20 +21,20 @@ import plus.vanilla.toolbase.ShovelBase;
 public class LoadNetherstar {
 
     //Armor
-    public static final Item NETHERSTAR_HELMET = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.HEAD, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
-    public static final Item NETHERSTAR_CHESTPLATE = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.CHEST, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
-    public static final Item NETHERSTAR_LEGGINGS = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.LEGS, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
-    public static final Item NETHERSTAR_BOOTS = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.FEET, (new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item NETHERSTAR_HELMET = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.HEAD, (new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item NETHERSTAR_CHESTPLATE = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.CHEST, (new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item NETHERSTAR_LEGGINGS = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.LEGS, (new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP)));
+    public static final Item NETHERSTAR_BOOTS = new ArmorItem(CustomArmorMaterial.NETHERSTAR, EquipmentSlot.FEET, (new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP)));
 
     //Blocks
     public static final Block NETHERSTAR_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).lightLevel(36).hardness(4));
 
     //Tools and weapons
-    public static final Item NETHERSTAR_SWORD = new SwordItem(CustomToolMaterial.NETHERSTAR, 3, -2.4f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_PICKAXE = new PickaxeBase(CustomToolMaterial.NETHERSTAR, -3, -2.8f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_AXE = new AxeBase(CustomToolMaterial.NETHERSTAR, 6, -3.3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_SHOVEL = new ShovelBase(CustomToolMaterial.NETHERSTAR, -3, -3f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
-    public static final Item NETHERSTAR_HOE = new HoeBase(CustomToolMaterial.NETHERSTAR, -9, -.5f, new Item.Settings().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_SWORD = new SwordItem(CustomToolMaterial.NETHERSTAR, 3, -2.4f, new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_PICKAXE = new PickaxeBase(CustomToolMaterial.NETHERSTAR, -3, -2.8f, new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_AXE = new AxeBase(CustomToolMaterial.NETHERSTAR, 6, -3.3f, new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_SHOVEL = new ShovelBase(CustomToolMaterial.NETHERSTAR, -3, -3f, new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP));
+    public static final Item NETHERSTAR_HOE = new HoeBase(CustomToolMaterial.NETHERSTAR, -9, -.5f, new Item.Settings().fireproof().maxCount(1).group(Entry.ITEM_GROUP));
 
     public void loadNetherstar(){
         /*
@@ -42,7 +42,7 @@ public class LoadNetherstar {
         */
         //Block
         Registry.register(Registry.BLOCK, new Identifier("vanplus", "netherstar_block"), NETHERSTAR_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_block"), new BlockItem(NETHERSTAR_BLOCK, new Item.Settings().group(Entry.ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_block"), new BlockItem(NETHERSTAR_BLOCK, new Item.Settings().fireproof().group(Entry.ITEM_GROUP)));
 
         //Armor
         Registry.register(Registry.ITEM, new Identifier("vanplus", "netherstar_helmet"), NETHERSTAR_HELMET);
