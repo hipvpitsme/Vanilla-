@@ -1,0 +1,30 @@
+{
+    "parent": "vanplus:plus/smelt_copper",
+    "display": {
+      "icon": {
+        "item": "vanplus:obsidian"
+      },
+      "title": {
+        "translate": "advancements.plus.obsidian_shards.title"
+      },
+      "description": {
+        "translate": "advancements.plus.obsidian_shards.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "obsidian": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "vanplus:obsidian"
+            }
+          ]
+        }
+      }
+    }
+  }

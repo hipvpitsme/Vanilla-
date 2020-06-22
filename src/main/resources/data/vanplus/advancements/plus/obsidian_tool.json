@@ -1,0 +1,70 @@
+{
+    "parent": "vanplus:plus/iron_rod",
+    "display": {
+      "icon": {
+        "item": "vanplus:obsidian_pickaxe"
+      },
+      "title": {
+        "translate": "advancements.plus.obsidian_tool.title"
+      },
+      "description": {
+        "translate": "advancements.plus.obsidian_tool.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "axe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+            "item": "vanplus:obsidian_axe"
+            }
+          ]
+        }
+      },
+      "hoe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+            "item": "vanplus:obsidian_hoe"
+            }
+          ]
+        }
+      },
+      "pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+            "item": "vanplus:obsidian_pickaxe"
+            }
+          ]
+        }
+      },
+      "shovel": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+            "item": "vanplus:obsidian_shovel"
+            }
+          ]
+        }
+      },
+      "sword": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+            "item": "vanplus:obsidian_sword"
+            }
+          ]
+        }
+      }
+    }
+  }

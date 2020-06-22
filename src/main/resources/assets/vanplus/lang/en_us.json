@@ -38,5 +38,13 @@
     "advancements.plus.root.title": "Vanilla+",
     "advancements.plus.root.description": "Wait... there's more?",
     "advancements.plus.smelt_copper.title": "Acquire \"Hardware\"",
-    "advancements.plus.smelt_copper.description": "Smelt a copper ingot"
+    "advancements.plus.smelt_copper.description": "Smelt a copper ingot",
+    "advancements.plus.obsidian_shards.title": "Holy S**T, Theres Shards!?",
+    "advancements.plus.obsidian_shards.description": "Get a piece of obsidian",
+    "advancements.plus.iron_rod.title": "A Rod Of Iron",
+    "advancements.plus.iron_rod.description": "Craft an iron rod",
+    "advancements.plus.obsidian_tool.title": "Obsidian Madness",
+    "advancements.plus.obsidian_tool.description": "Make an obsidian tool",
+    "advancements.plus.obsidian_hoe.title": "This Hoe Looks Different",
+    "advancements.plus.obsidian_hoe.description": "Craft an obsidian hoe"
 }

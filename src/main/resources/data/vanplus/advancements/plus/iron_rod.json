@@ -1,0 +1,30 @@
+{
+    "parent": "vanplus:plus/obsidian_shards",
+    "display": {
+      "icon": {
+        "item": "vanplus:iron_rod"
+      },
+      "title": {
+        "translate": "advancements.plus.iron_rod.title"
+      },
+      "description": {
+        "translate": "advancements.plus.iron_rod.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "iron_rod": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "vanplus:iron_rod"
+            }
+          ]
+        }
+      }
+    }
+  }
