@@ -1,14 +1,14 @@
 {
-    "parent": "vanplus:plus/obsidian_tool",
+    "parent": "vanplus:plus/nether_star_upgrade",
     "display": {
       "icon": {
-        "item": "vanplus:obsidian_hoe"
+        "item": "vanplus:netherstar_hoe"
       },
       "title": {
-        "translate": "advancements.plus.obsidian_hoe.title"
+        "translate": "advancements.plus.netherstar_hoe.title"
       },
       "description": {
-        "translate": "advancements.plus.obsidian_hoe.description"
+        "translate": "advancements.plus.netherstar_hoe.description"
       },
       "frame": "challenge",
       "show_toast": true,
@@ -16,12 +16,12 @@
       "hidden": true
     },
     "criteria": {
-      "obsidian": {
+      "hoe": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-              "item": "vanplus:obsidian_hoe"
+            "item": "vanplus:netherstar_hoe"
             }
           ]
         }

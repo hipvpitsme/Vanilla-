@@ -1,14 +1,14 @@
 {
-    "parent": "vanplus:plus/iron_rod",
+    "parent": "vanplus:plus/nether_star_upgrade",
     "display": {
       "icon": {
-        "item": "vanplus:obsidian_pickaxe"
+        "item": "vanplus:netherstar_pickaxe"
       },
       "title": {
-        "translate": "advancements.plus.obsidian_tool.title"
+        "translate": "advancements.plus.full_netherstar_tool_set.title"
       },
       "description": {
-        "translate": "advancements.plus.obsidian_tool.description"
+        "translate": "advancements.plus.full_netherstar_tool_set.description"
       },
       "frame": "task",
       "show_toast": true,
@@ -21,7 +21,7 @@
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_axe"
+            "item": "vanplus:netherstar_axe"
             }
           ]
         }
@@ -31,7 +31,7 @@
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_hoe"
+            "item": "vanplus:netherstar_hoe"
             }
           ]
         }
@@ -41,7 +41,7 @@
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_pickaxe"
+            "item": "vanplus:netherstar_pickaxe"
             }
           ]
         }
@@ -51,7 +51,7 @@
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_shovel"
+            "item": "vanplus:netherstar_shovel"
             }
           ]
         }
@@ -61,19 +61,10 @@
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_sword"
+            "item": "vanplus:netherstar_sword"
             }
           ]
         }
       }
-    },
-    "requirements": [
-        [
-            "axe",
-            "hoe",
-            "pickaxe",
-            "shovel",
-            "sword"
-        ]
-    ]
+    }
   }

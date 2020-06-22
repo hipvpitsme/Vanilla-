@@ -46,5 +46,13 @@
     "advancements.plus.obsidian_tool.title": "Obsidian Madness",
     "advancements.plus.obsidian_tool.description": "Make an obsidian tool",
     "advancements.plus.obsidian_hoe.title": "This Hoe Looks Different",
-    "advancements.plus.obsidian_hoe.description": "Craft an obsidian hoe"
+    "advancements.plus.obsidian_hoe.description": "Craft an obsidian hoe",
+    "advancements.plus.nether_star_upgrade.title": "Thats Expensive",
+    "advancements.plus.nether_star_upgrade.description": "Upgrade a netherite item to a netherstar item",
+    "advancements.plus.full_netherstar_armor_set.title": "Thats Pretty Cash Money",
+    "advancements.plus.full_netherstar_armor_set.description": "Get a full set of netherstar armor",
+    "advancements.plus.netherstar_hoe.title": "A Strong Hoe",
+    "advancements.plus.netherstar_hoe.description": "Craft a netherstar hoe",
+    "advancements.plus.full_netherstar_tool_set.title": "An Abundance Of NetherStars",
+    "advancements.plus.full_netherstar_tool_set.description": "Make a full set of netherstar tools"
 }

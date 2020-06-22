@@ -1,14 +1,14 @@
 {
-    "parent": "vanplus:plus/iron_rod",
+    "parent": "vanplus:plus/nether_star_upgrade",
     "display": {
       "icon": {
-        "item": "vanplus:obsidian_pickaxe"
+        "item": "vanplus:netherstar_helmet"
       },
       "title": {
-        "translate": "advancements.plus.obsidian_tool.title"
+        "translate": "advancements.plus.full_netherstar_armor_set.title"
       },
       "description": {
-        "translate": "advancements.plus.obsidian_tool.description"
+        "translate": "advancements.plus.full_netherstar_armor_set.description"
       },
       "frame": "task",
       "show_toast": true,
@@ -16,64 +16,45 @@
       "hidden": true
     },
     "criteria": {
-      "axe": {
+      "boots": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_axe"
+            "item": "vanplus:netherstar_boots"
             }
           ]
         }
       },
-      "hoe": {
+      "leggings": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_hoe"
+            "item": "vanplus:netherstar_leggings"
             }
           ]
         }
       },
-      "pickaxe": {
+      "chestplate": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_pickaxe"
+            "item": "vanplus:netherstar_chestplate"
             }
           ]
         }
       },
-      "shovel": {
+      "helmet": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-            "item": "vanplus:obsidian_shovel"
-            }
-          ]
-        }
-      },
-      "sword": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-            "item": "vanplus:obsidian_sword"
+            "item": "vanplus:netherstar_helmet"
             }
           ]
         }
       }
-    },
-    "requirements": [
-        [
-            "axe",
-            "hoe",
-            "pickaxe",
-            "shovel",
-            "sword"
-        ]
-    ]
+    }
   }
